@@ -1,0 +1,19 @@
+spring:
+  docker:
+    compose:
+      enabled: false
+
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    com.stockmate: DEBUG
+
+springdoc:
+  swagger-ui:
+    try-it-out-enabled: true
