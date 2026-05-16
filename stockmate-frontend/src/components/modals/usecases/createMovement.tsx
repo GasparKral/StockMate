@@ -7,7 +7,6 @@ import DropdownInput from "@/components/generics/dropdownInput"
 import { useState, useEffect, useCallback } from "react"
 import { ErrorBoundary } from "@/components/generics/errorBounds"
 import { API } from "@/utils/apiCall"
-import { useAuthStore } from "@/stores/auth"
 
 // ─── Razones válidas por tipo de movimiento ───────────────────────────────────
 

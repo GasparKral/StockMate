@@ -1,4 +1,3 @@
-import type { Product } from "@/types/product"
 import { useEffect, useState, useRef, useCallback } from "react"
 
 interface DropdownInputProps<T> {

@@ -69,7 +69,7 @@ async function TryLogin({ onSuccess, onError }: { onSuccess: (user: User) => voi
 
 		const data = await response.json();
 		localStorage.setItem("authToken", data.token);
-		onSuccess({ username: data.username, role: data.role });
+		onSuccess({ userId: data.userId, username: data.username, role: data.role });
 	} catch (error) {
 		onError(error instanceof Error ? error.message : "Error desconocido");
 	}

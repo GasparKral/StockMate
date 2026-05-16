@@ -12,7 +12,7 @@ const CreateCategoryModal = ({
 	category?: undefined | null | Category
 }) => {
 	return (
-		<Modal title="Nueva Categoria" isOpen={showModal} onClose={closeModal} onSave={() => { }}>
+		<Modal title="Nueva Categoria" isOpen={showModal} onClose={closeModal}>
 			<form onSubmit={e => e.preventDefault()} className="flex flex-col w-160 gap-4">
 				<label className="form-label max-w-2/5">
 					Nombre de la Categoria

@@ -1,4 +1,4 @@
-import type { AuthStore, AuthStoreActions, User } from "@/stores/auth"
+import type { AuthStoreActions, User } from "@/stores/auth"
 import { useAuthStore } from "@/stores/auth"
 import { API } from "@/utils/apiCall"
 import React, { use, useState, useEffect, useRef, type ReactNode } from "react"

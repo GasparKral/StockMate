@@ -132,7 +132,7 @@ const Movements = () => {
 						<tbody className="min-h-50">
 							{filteredMovements
 								.sort((a, b) =>
-									new Date(b.registeredAt) - new Date(a.registeredAt))
+									new Date(b.registeredAt) as any - (new Date(a.registeredAt) as any))
 								.map(m => (
 									<tr key={m.id} className={m.type == 'ENTRY' ? "badge-entry" : "badge-exit"}>
 										<td>{m.product.sku}</td>
